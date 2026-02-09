@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Pure White */
+    --foreground: 240 8% 12%; /* Deep Charcoal */
+    --card: 0 0% 100%; /* Pure White */
+    --card-foreground: 240 8% 12%; /* Deep Charcoal */
+    --popover: 0 0% 100%; /* Pure White */
+    --popover-foreground: 240 8% 12%; /* Deep Charcoal */
+    --primary: 262 83% 58%; /* Electric Purple */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 220 13% 95%; /* Soft Gray */
+    --secondary-foreground: 240 8% 12%; /* Deep Charcoal */
+    --muted: 220 13% 95%; /* Soft Gray */
+    --muted-foreground: 220 9% 46%; /* Medium Gray */
+    --accent: 262 83% 95%; /* Light Purple Tint */
+    --accent-foreground: 262 83% 58%; /* Electric Purple */
+    --destructive: 0 72% 51%; /* Vivid Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+    --border: 220 13% 91%; /* Subtle Border */
+    --input: 220 13% 91%; /* Subtle Border */
+    --ring: 262 83% 58%; /* Electric Purple */
+    --chart-1: 262 83% 58%;
+    --chart-2: 173 58% 50%;
+    --chart-3: 43 96% 56%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 1rem; /* Modern rounded corners */
+    --sidebar-background: 0 0% 100%; /* Pure White */
+    --sidebar-foreground: 240 8% 12%; /* Deep Charcoal */
+    --sidebar-primary: 262 83% 58%; /* Electric Purple */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 262 83% 95%; /* Light Purple Tint */
+    --sidebar-accent-foreground: 262 83% 58%; /* Electric Purple */
+    --sidebar-border: 220 13% 91%; /* Subtle Border */
+    --sidebar-ring: 262 83% 58%; /* Electric Purple */
+  }
+  .dark {
+    --background: 240 8% 8%; /* Deep Dark */
+    --foreground: 0 0% 98%; /* Near White */
+    --card: 240 8% 11%; /* Slightly Lighter Dark */
+    --card-foreground: 0 0% 98%; /* Near White */
+    --popover: 240 8% 11%; /* Slightly Lighter Dark */
+    --popover-foreground: 0 0% 98%; /* Near White */
+    --primary: 262 83% 58%; /* Electric Purple */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 240 4% 16%; /* Dark Gray */
+    --secondary-foreground: 0 0% 98%; /* Near White */
+    --muted: 240 4% 16%; /* Dark Gray */
+    --muted-foreground: 240 5% 64%; /* Light Gray */
+    --accent: 240 4% 16%; /* Dark Gray */
+    --accent-foreground: 262 83% 58%; /* Electric Purple */
+    --destructive: 0 62% 45%; /* Dark Red */
+    --destructive-foreground: 0 0% 98%; /* White */
+    --border: 240 4% 16%; /* Dark Border */
+    --input: 240 4% 16%; /* Dark Border */
+    --ring: 262 83% 58%; /* Electric Purple */
+    --chart-1: 262 83% 58%;
+    --chart-2: 173 58% 50%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 8% 8%; /* Deep Dark */
+    --sidebar-foreground: 0 0% 98%; /* Near White */
+    --sidebar-primary: 262 83% 58%; /* Electric Purple */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 240 4% 16%; /* Dark Gray */
+    --sidebar-accent-foreground: 262 83% 58%; /* Electric Purple */
+    --sidebar-border: 240 4% 16%; /* Dark Border */
+    --sidebar-ring: 262 83% 58%; /* Electric Purple */
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+  }
+  
+  /* Modern typography scale */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-5xl md:text-6xl;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h3 {
+    @apply text-3xl md:text-4xl;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
+
+/* Smooth transitions */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

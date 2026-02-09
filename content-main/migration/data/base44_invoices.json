@@ -1,0 +1,38 @@
+[
+  {
+    "invoice_id": "inv_9001",
+    "customer_id": "client_101",
+    "issued": "2023-10-15T00:00:00.000Z",
+    "due": "2023-11-15T00:00:00.000Z",
+    "state": "sent",
+    "line_items": [
+      {
+        "product_ref": "PROD-001",
+        "description": "Backend work for Q3",
+        "qty": 40,
+        "price_per_unit": 100
+      }
+    ]
+  },
+  {
+    "invoice_id": "inv_9002",
+    "customer_id": "client_102",
+    "issued": "2023-11-01T00:00:00.000Z",
+    "due": "2023-12-01T00:00:00.000Z",
+    "state": "draft",
+    "line_items": [
+      {
+        "product_ref": "PROD-002",
+        "description": "Full redesign concept",
+        "qty": 1,
+        "price_per_unit": 2500
+      },
+      {
+        "product_ref": "PROD-001",
+        "description": "Consulting hours",
+        "qty": 10,
+        "price_per_unit": 120
+      }
+    ]
+  }
+]

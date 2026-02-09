@@ -1,0 +1,18 @@
+[
+  {
+    "id": "client_101",
+    "company_name": "Innovate Corp",
+    "contact": "John Doe",
+    "email_address": "john.doe@innovate.com",
+    "status": "active",
+    "manager_id": "user_55"
+  },
+  {
+    "id": "client_102",
+    "company_name": "Synergy Solutions",
+    "contact": "Jane Smith",
+    "email_address": "jane.smith@synergy.com",
+    "status": "active",
+    "manager_id": "user_56"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "user_55",
+    "full_name": "Alice Johnson",
+    "email": "alice@example.com",
+    "access_level": "admin"
+  },
+  {
+    "id": "user_56",
+    "full_name": "Bob Williams",
+    "email": "bob@example.com",
+    "access_level": "manager"
+  }
+]

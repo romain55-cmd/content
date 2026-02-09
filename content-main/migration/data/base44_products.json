@@ -1,0 +1,14 @@
+[
+  {
+    "sku": "PROD-001",
+    "product_name": "API Development",
+    "unit_cost": 100,
+    "unit_type": "hour"
+  },
+  {
+    "sku": "PROD-002",
+    "product_name": "UI/UX Design Package",
+    "unit_cost": 2500,
+    "unit_type": "item"
+  }
+]
