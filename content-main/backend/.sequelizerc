@@ -1,7 +1,7 @@
 const path = require('path');
 
-// Explicitly load .env.development before sequelize-cli runs
-require('dotenv').config({ path: path.resolve(__dirname, '../.env.development') });
+// Load .env file before sequelize-cli runs
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 module.exports = {
   'config': path.resolve('config', 'config.js'),

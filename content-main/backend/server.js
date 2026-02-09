@@ -1,6 +1,6 @@
-// Explicitly load dev env vars
+// Load environment variables
 if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config({ path: require('path').resolve(__dirname, '../.env.development') });
+  require('dotenv').config({ path: require('path').resolve(__dirname, '.env') });
 }
 
 const path = require('path');
